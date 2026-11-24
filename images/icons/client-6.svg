@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" width="180" height="72">
+  <!-- Icon: purple pill/circle, centered at (25,36) -->
+  <circle cx="25" cy="36" r="19" fill="#4b2d8a"/>
+  <text x="25" y="36" dy="0.35em" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#C9A227" text-anchor="middle">VK</text>
+  <!-- Divider -->
+  <line x1="52" y1="36" x2="174" y2="36" stroke="#ebebeb" stroke-width="1"/>
+  <!-- Company name -->
+  <text x="113" y="27" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="0.8">VISION KSA</text>
+  <!-- Subtitle -->
+  <text x="113" y="51" font-family="Arial,sans-serif" font-size="8.5" fill="#8D8D8D" text-anchor="middle">Strategic Projects 2030</text>
+</svg>
