@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Projects | Al-Batahan Contracting - Riyadh, Saudi Arabia.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://albathanksa.com/projects/">
+    <meta property="og:title" content="Our Projects | Al-Batahan Contracting">
+    <meta property="og:url" content="https://albathanksa.com/projects/">
+        <title>Our Projects | Al-Batahan Contracting</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/rtl.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%231B4D3E'/><text y='.85em' font-size='65' x='18' fill='%23C9A227'>&#x628;</text></svg>">
+    <style>
+        .page-loader{position:fixed;inset:0;background:#1B4D3E;display:flex;align-items:center;justify-content:center;z-index:99999;transition:opacity .7s ease,visibility .7s ease}
+        .page-loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+        .loader-inner{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+        .loader-symbol-wrap{position:relative;width:72px;height:72px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+        .loader-ring{position:absolute;inset:0;border:2px solid rgba(201,162,39,.18);border-top-color:#C9A227;border-radius:50%;animation:lSpin 1s linear infinite}
+        .loader-symbol{width:52px;height:52px;background:#C9A227;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;color:#fff;font-family:'Tajawal',sans-serif;animation:lPulse 2s ease-in-out infinite}
+        @keyframes lSpin{to{transform:rotate(360deg)}}
+        @keyframes lPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(201,162,39,0)}50%{transform:scale(1.07);box-shadow:0 0 18px 4px rgba(201,162,39,.25)}}
+        .loader-brand{display:block;font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#fff}
+        .loader-tagline{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.45);font-family:'Poppins',sans-serif;margin:0}
+        .loader-bar{width:160px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;margin-top:8px}
+        .loader-progress{height:100%;width:0%;background:linear-gradient(90deg,#C9A227,#E8C55A,#C9A227);border-radius:2px;animation:lFill 1.9s ease forwards}
+        @keyframes lFill{0%{width:0%}40%{width:55%}80%{width:88%}100%{width:100%}}
+    </style>
+
+   </head>
+    <body>
+        <!-- PAGE LOADER -->
+        <div id="pageLoader" class="page-loader">
+            <div class="loader-inner">
+                <img src="../images/logo/Logo-1.png" alt="Al-Batahan" class="loader-logo-img">
+                <span class="loader-brand">AL-BATAHAN</span>
+                <p class="loader-tagline">Contracting Establishment</p>
+                <div class="loader-bar"><div class="loader-progress"></div></div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../index.html" class="nav-logo">
+                    <img src="../images/logo/Logo-1.png" alt="Al-Batahan Contracting" class="nav-logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="../index.html" data-en="Home" data-ar="&#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629;">Home</a>
+                    <a href="../about/index.html" data-en="About" data-ar="&#x645;&#x646; &#x646;&#x62D;&#x646;">About</a>
+                    <a href="../services/index.html" data-en="Services" data-ar="&#x62E;&#x62F;&#x645;&#x627;&#x62A;&#x646;&#x627;">Services</a>
+                    <a href="../projects/index.html" class="active" data-en="Projects" data-ar="&#x645;&#x634;&#x627;&#x631;&#x64A;&#x639;&#x646;&#x627;">Projects</a>
+                    <a href="../contact/index.html" data-en="Contact" data-ar="&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x646;&#x627;">Contact</a>
+               </div>
+                <div class="nav-right">
+                    <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-dropdown-trigger" id="langTrigger" aria-expanded="false" aria-haspopup="listbox">
+                        <i class="fas fa-globe lang-globe"></i>
+                        <span id="langCurrentLabel">EN</span>
+                        <i class="fas fa-chevron-down lang-chevron"></i>
+                    </button>
+                    <ul class="lang-menu" id="langMenu" role="listbox">
+                        <li class="lang-option active" data-lang="en" role="option">
+                            <div class="lang-opt-icon">EN</div>
+                            <span class="lang-opt-name">English</span>
+                            <span class="lang-opt-code">EN</span>
+                        </li>
+                        <li class="lang-option" data-lang="ar" role="option">
+                            <div class="lang-opt-icon">AR</div>
+                            <span class="lang-opt-name">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</span>
+                            <span class="lang-opt-code">AR</span>
+                        </li>
+                    </ul>
+                </div>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span></button>
+               </div>
+           </div>
+       </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="mobile-close" id="mobileClose">
+                <i class="fas fa-times"></i></button>
+            <a href="../index.html" data-en="Home" data-ar="&#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629;">Home</a>
+            <a href="../about/index.html" data-en="About" data-ar="&#x645;&#x646; &#x646;&#x62D;&#x646;">About</a>
+            <a href="../services/index.html" data-en="Services" data-ar="&#x62E;&#x62F;&#x645;&#x627;&#x62A;&#x646;&#x627;">Services</a>
+            <a href="../projects/index.html" class="active" data-en="Projects" data-ar="&#x645;&#x634;&#x627;&#x631;&#x64A;&#x639;&#x646;&#x627;">Projects</a>
+            <a href="../contact/index.html" data-en="Contact" data-ar="&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x646;&#x627;">Contact</a>
+            <div class="menu-cta">
+                <a href="../contact/index.html" class="btn btn-primary" data-en="Get a Quote" data-ar="&#x627;&#x62D;&#x635;&#x644; &#x639;&#x644;&#x649; &#x639;&#x631;&#x636;">Get a Quote</a>
+           </div>
+       </div>
+        <section class="page-hero">
+            <h1 data-en="Our Projects" data-ar="&#x645;&#x634;&#x627;&#x631;&#x64A;&#x639;&#x646;&#x627;">Our Projects</h1>
+            <p class="subtitle" data-en="A portfolio of completed works across Saudi Arabia" data-ar="&#x645;&#x62D;&#x641;&#x638;&#x629; &#x623;&#x639;&#x645;&#x627;&#x644; &#x645;&#x646;&#x62C;&#x632;&#x629; &#x641;&#x64A; &#x623;&#x646;&#x62D;&#x627;&#x621; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">A portfolio of completed works across Saudi Arabia</p>
+            <div class="breadcrumb">
+                <a href="../index.html" data-en="Home" data-ar="&#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629;">Home</a>
+                <span class="sep">
+                    <i class="fas fa-chevron-right"></i></span>
+                <span data-en="Projects" data-ar="&#x645;&#x634;&#x627;&#x631;&#x64A;&#x639;&#x646;&#x627;">Projects</span>
+           </div>
+       </section>
+        <section class="projects-filter-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all" data-en="All Projects" data-ar="&#x62C;&#x645;&#x64A;&#x639; &#x627;&#x644;&#x645;&#x634;&#x627;&#x631;&#x64A;&#x639;">All Projects</button>
+                    <button class="filter-btn" data-filter="construction" data-en="Construction" data-ar="&#x625;&#x646;&#x634;&#x627;&#x621;">Construction</button>
+                    <button class="filter-btn" data-filter="civil" data-en="Civil Works" data-ar="&#x623;&#x639;&#x645;&#x627;&#x644; &#x645;&#x62F;&#x646;&#x64A;&#x629;">Civil Works</button>
+                    <button class="filter-btn" data-filter="renovation" data-en="Renovation" data-ar="&#x62A;&#x62C;&#x62F;&#x64A;&#x62F;">Renovation</button>
+                    <button class="filter-btn" data-filter="infrastructure" data-en="Infrastructure" data-ar="&#x628;&#x646;&#x64A;&#x629; &#x62A;&#x62D;&#x62A;&#x64A;&#x629;">Infrastructure</button>
+               </div>
+           </div>
+       </section>
+        <section class="projects-full-section">
+            <div class="container">
+                <div class="projects-full-grid">
+
+                    <!-- Card 1 -->
+                    <div class="project-card-full" data-category="construction">
+                        <div class="project-image">
+                            <div class="project-image-bg proj-bg-1">
+                                <i class="fas fa-building proj-icon"></i>
+                           </div>
+                            <div class="project-hover-overlay">
+                                <span data-en="View Details" data-ar="&#x639;&#x631;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x627;&#x635;&#x64A;&#x644;">View Details</span>
+                           </div>
+                       </div>
+                        <div class="project-info">
+                            <span class="project-category" data-en="Construction" data-ar="&#x625;&#x646;&#x634;&#x627;&#x621;">Construction</span>
+                            <h3 data-en="Residential Complex &mdash; North Riyadh" data-ar="&#x645;&#x62C;&#x645;&#x639; &#x633;&#x643;&#x646;&#x64A; &mdash; &#x634;&#x645;&#x627;&#x644; &#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;">Residential Complex &mdash; North Riyadh</h3>
+                            <p class="project-desc" data-en="A multi-unit residential complex comprising 24 villas with full infrastructure and landscaping." data-ar="&#x645;&#x62C;&#x645;&#x639; &#x633;&#x643;&#x646;&#x64A; &#x645;&#x62A;&#x639;&#x62F;&#x62F; &#x627;&#x644;&#x648;&#x62D;&#x62F;&#x627;&#x62A; &#x64A;&#x636;&#x645; 24 &#x641;&#x64A;&#x644;&#x627; &#x645;&#x639; &#x628;&#x646;&#x64A;&#x629; &#x62A;&#x62D;&#x62A;&#x64A;&#x629; &#x643;&#x627;&#x645;&#x644;&#x629;.">A multi-unit residential complex comprising 24 villas with full infrastructure.</p>
+                            <div class="project-meta">
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-en="Riyadh, KSA" data-ar="&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;&#x60C; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">Riyadh, KSA</span></span>
+                                <span>
+                                    <i class="fas fa-calendar"></i> 2024</span>
+                               </div>
+                           </div>
+                       </div>
+
+                    <!-- Card 2 -->
+                    <div class="project-card-full" data-category="construction">
+                        <div class="project-image">
+                            <div class="project-image-bg proj-bg-2"></div>
+                            <div class="project-hover-overlay">
+                                <span data-en="View Details" data-ar="&#x639;&#x631;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x627;&#x635;&#x64A;&#x644;">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-en="Construction" data-ar="&#x625;&#x646;&#x634;&#x627;&#x621;">Construction</span>
+                            <h3 data-en="Government Office Building" data-ar="&#x645;&#x628;&#x646;&#x649; &#x62D;&#x643;&#x648;&#x645;&#x64A;">Government Office Building</h3>
+                            <p class="project-desc" data-en="A 5-storey government administrative building with modern finishes and full MEP works." data-ar="&#x645;&#x628;&#x646;&#x649; &#x62D;&#x643;&#x648;&#x645;&#x64A; &#x625;&#x62F;&#x627;&#x631;&#x64A; &#x645;&#x646; 5 &#x637;&#x648;&#x627;&#x628;&#x642; &#x628;&#x62A;&#x634;&#x637;&#x64A;&#x628;&#x627;&#x62A; &#x62D;&#x62F;&#x64A;&#x62B;&#x629; &#x648;&#x623;&#x639;&#x645;&#x627;&#x644; &#x645;&#x64A;&#x643;&#x627;&#x646;&#x64A;&#x643;&#x64A;&#x629; &#x648;&#x643;&#x647;&#x631;&#x628;&#x627;&#x626;&#x64A;&#x629; &#x648;&#x633;&#x628;&#x627;&#x643;&#x629; &#x643;&#x627;&#x645;&#x644;&#x629;.">A 5-storey government administrative building with modern finishes and full MEP works.</p>
+                            <div class="project-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-en="Riyadh, KSA" data-ar="&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;&#x60C; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">Riyadh, KSA</span></span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div><!-- /card-2 -->
+
+                    <!-- Card 3 -->
+                    <div class="project-card-full" data-category="civil">
+                        <div class="project-image">
+                            <div class="project-image-bg proj-bg-3"></div>
+                            <div class="project-hover-overlay">
+                                <span data-en="View Details" data-ar="&#x639;&#x631;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x627;&#x635;&#x64A;&#x644;">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-en="Civil Works" data-ar="&#x623;&#x639;&#x645;&#x627;&#x644; &#x645;&#x62F;&#x646;&#x64A;&#x629;">Civil Works</span>
+                            <h3 data-en="Highway Road Extension" data-ar="&#x627;&#x645;&#x62A;&#x62F;&#x627;&#x62F; &#x637;&#x631;&#x64A;&#x642; &#x633;&#x631;&#x64A;&#x639;">Highway Road Extension</h3>
+                            <p class="project-desc" data-en="Road extension of 4.2 km including drainage, lighting, signage and pavement layers." data-ar="&#x627;&#x645;&#x62A;&#x62F;&#x627;&#x62F; &#x637;&#x631;&#x64A;&#x642; &#x628;&#x637;&#x648;&#x644; 4.2 &#x643;&#x645; &#x64A;&#x634;&#x645;&#x644; &#x635;&#x631;&#x641; &#x648;&#x625;&#x636;&#x627;&#x621;&#x629; &#x648;&#x644;&#x627;&#x641;&#x62A;&#x627;&#x62A; &#x648;&#x637;&#x628;&#x642;&#x627;&#x62A; &#x631;&#x635;&#x641;.">Road extension of 4.2 km including drainage, lighting and pavement layers.</p>
+                            <div class="project-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-en="Riyadh, KSA" data-ar="&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;&#x60C; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">Riyadh, KSA</span></span>
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                            </div>
+                        </div>
+                    </div><!-- /card-3 -->
+
+                    <!-- Card 4 -->
+                    <div class="project-card-full" data-category="renovation">
+                        <div class="project-image">
+                            <div class="project-image-bg proj-bg-4"></div>
+                            <div class="project-hover-overlay">
+                                <span data-en="View Details" data-ar="&#x639;&#x631;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x627;&#x635;&#x64A;&#x644;">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-en="Renovation" data-ar="&#x62A;&#x62C;&#x62F;&#x64A;&#x62F;">Renovation</span>
+                            <h3 data-en="Shopping Mall Renovation" data-ar="&#x62A;&#x62C;&#x62F;&#x64A;&#x62F; &#x645;&#x631;&#x643;&#x632; &#x62A;&#x633;&#x648;&#x642;">Shopping Mall Renovation</h3>
+                            <p class="project-desc" data-en="Complete renovation of a 3,500 sqm retail space including flooring, ceilings and storefronts." data-ar="&#x62A;&#x62C;&#x62F;&#x64A;&#x62F; &#x643;&#x627;&#x645;&#x644; &#x644;&#x645;&#x633;&#x627;&#x62D;&#x629; &#x62A;&#x62C;&#x632;&#x626;&#x629; 3,500 &#x645;&#x62A;&#x631; &#x645;&#x631;&#x628;&#x639;.">Complete renovation of a 3,500 sqm retail space.</p>
+                            <div class="project-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-en="Riyadh, KSA" data-ar="&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;&#x60C; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">Riyadh, KSA</span></span>
+                                <span><i class="fas fa-calendar"></i> 2023</span>
+                            </div>
+                        </div>
+                    </div><!-- /card-4 -->
+
+                    <!-- Card 5 -->
+                    <div class="project-card-full" data-category="infrastructure">
+                        <div class="project-image">
+                            <div class="project-image-bg proj-bg-5"></div>
+                            <div class="project-hover-overlay">
+                                <span data-en="View Details" data-ar="&#x639;&#x631;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x627;&#x635;&#x64A;&#x644;">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-en="Infrastructure" data-ar="&#x628;&#x646;&#x64A;&#x629; &#x62A;&#x62D;&#x62A;&#x64A;&#x629;">Infrastructure</span>
+                            <h3 data-en="Water Supply Network" data-ar="&#x634;&#x628;&#x643;&#x629; &#x625;&#x645;&#x62F;&#x627;&#x62F; &#x627;&#x644;&#x645;&#x64A;&#x627;&#x647;">Water Supply Network</h3>
+                            <p class="project-desc" data-en="Installation of a water supply network serving a residential district with over 500 housing units." data-ar="&#x62A;&#x631;&#x643;&#x64A;&#x628; &#x634;&#x628;&#x643;&#x629; &#x625;&#x645;&#x62F;&#x627;&#x62F; &#x645;&#x64A;&#x627;&#x647; &#x62A;&#x62E;&#x62F;&#x645; &#x62D;&#x64A;&#x64B;&#x627; &#x633;&#x643;&#x646;&#x64A;&#x64B;&#x627; &#x628;&#x623;&#x643;&#x62B;&#x631; &#x645;&#x646; 500 &#x648;&#x62D;&#x62F;&#x629; &#x633;&#x643;&#x646;&#x64A;&#x629;.">Water supply network serving over 500 residential units.</p>
+                            <div class="project-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-en="Riyadh, KSA" data-ar="&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;&#x60C; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">Riyadh, KSA</span></span>
+                                <span><i class="fas fa-calendar"></i> 2022</span>
+                            </div>
+                        </div>
+                    </div><!-- /card-5 -->
+
+                    <!-- Card 6 -->
+                    <div class="project-card-full" data-category="renovation">
+                        <div class="project-image">
+                            <div class="project-image-bg proj-bg-6"></div>
+                            <div class="project-hover-overlay">
+                                <span data-en="View Details" data-ar="&#x639;&#x631;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x627;&#x635;&#x64A;&#x644;">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-en="Renovation" data-ar="&#x62A;&#x62C;&#x62F;&#x64A;&#x62F;">Renovation</span>
+                            <h3 data-en="Corporate Office Fit-Out" data-ar="&#x62A;&#x62C;&#x647;&#x64A;&#x632; &#x645;&#x643;&#x627;&#x62A;&#x628; &#x634;&#x631;&#x643;&#x629;">Corporate Office Fit-Out</h3>
+                            <p class="project-desc" data-en="Interior fit-out of a 1,200 sqm corporate head office including custom joinery and lighting." data-ar="&#x62A;&#x62C;&#x647;&#x64A;&#x632; &#x62F;&#x627;&#x62E;&#x644;&#x64A; &#x644;&#x645;&#x642;&#x631; &#x631;&#x626;&#x64A;&#x633;&#x64A; &#x644;&#x634;&#x631;&#x643;&#x629; &#x645;&#x633;&#x627;&#x62D;&#x62A;&#x647; 1,200 &#x645;&#x62A;&#x631; &#x645;&#x631;&#x628;&#x639;.">Interior fit-out of a 1,200 sqm corporate head office.</p>
+                            <div class="project-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> <span data-en="Riyadh, KSA" data-ar="&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;&#x60C; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">Riyadh, KSA</span></span>
+                                <span><i class="fas fa-calendar"></i> 2022</span>
+                            </div>
+                        </div>
+                    </div><!-- /card-6 -->
+
+                </div><!-- /projects-full-grid -->
+            </div><!-- /container -->
+        </section><!-- /projects-full-section -->
+
+        <section class="cta-section">
+            <div class="container">
+                <h2 data-en="Start Your Next Project with Us" data-ar="&#x627;&#x628;&#x62F;&#x623; &#x645;&#x634;&#x631;&#x648;&#x639;&#x643; &#x627;&#x644;&#x642;&#x627;&#x62F;&#x645; &#x645;&#x639;&#x646;&#x627;">Start Your Next Project with Us</h2>
+                <p data-en="Our team is ready to bring your vision to life. Get in touch today." data-ar="&#x641;&#x631;&#x64A;&#x642;&#x646;&#x627; &#x645;&#x633;&#x62A;&#x639;&#x62F; &#x644;&#x62A;&#x62D;&#x648;&#x64A;&#x644; &#x631;&#x624;&#x64A;&#x62A;&#x643; &#x625;&#x644;&#x649; &#x648;&#x627;&#x642;&#x639;.">Our team is ready to bring your vision to life.</p>
+                <div class="cta-btns">
+                    <a href="../contact/index.html" class="btn btn-primary">
+                        <span data-en="Contact Us" data-ar="&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x646;&#x627;">Contact Us</span></a>
+                    <a href="../services/index.html" class="btn btn-outline">
+                        <span data-en="Our Services" data-ar="&#x62E;&#x62F;&#x645;&#x627;&#x62A;&#x646;&#x627;">Our Services</span></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <img src="../images/logo/Logo-1.png" alt="Al-Batahan Contracting" class="footer-logo-img">
+                        <p class="footer-tagline" data-en="Building Tomorrow Saudi Arabia Today." data-ar="&#x646;&#x628;&#x646;&#x64A; &#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629; &#x627;&#x644;&#x63A;&#x62F;&#x60C; &#x627;&#x644;&#x64A;&#x648;&#x645;.">Building Tomorrow Saudi Arabia Today.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-en="Quick Links" data-ar="&#x631;&#x648;&#x627;&#x628;&#x637; &#x633;&#x631;&#x64A;&#x639;&#x629;">Quick Links</h4>
+                        <div class="footer-links">
+                            <a href="../index.html" data-en="Home" data-ar="&#x627;&#x644;&#x631;&#x626;&#x64A;&#x633;&#x64A;&#x629;">Home</a>
+                            <a href="../about/index.html" data-en="About Us" data-ar="&#x645;&#x646; &#x646;&#x62D;&#x646;">About Us</a>
+                            <a href="../services/index.html" data-en="Our Services" data-ar="&#x62E;&#x62F;&#x645;&#x627;&#x62A;&#x646;&#x627;">Our Services</a>
+                            <a href="../projects/index.html" data-en="Projects" data-ar="&#x645;&#x634;&#x627;&#x631;&#x64A;&#x639;&#x646;&#x627;">Projects</a>
+                            <a href="../contact/index.html" data-en="Contact Us" data-ar="&#x62A;&#x648;&#x627;&#x635;&#x644; &#x645;&#x639;&#x646;&#x627;">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-en="Our Services" data-ar="&#x62E;&#x62F;&#x645;&#x627;&#x62A;&#x646;&#x627;">Our Services</h4>
+                        <div class="footer-links">
+                            <a href="../services/index.html" data-en="General Contracting" data-ar="&#x627;&#x644;&#x645;&#x642;&#x627;&#x648;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x639;&#x627;&#x645;&#x629;">General Contracting</a>
+                            <a href="../services/index.html" data-en="Civil Works" data-ar="&#x627;&#x644;&#x623;&#x639;&#x645;&#x627;&#x644; &#x627;&#x644;&#x645;&#x62F;&#x646;&#x64A;&#x629;">Civil Works</a>
+                            <a href="../services/index.html" data-en="Building Construction" data-ar="&#x625;&#x646;&#x634;&#x627;&#x621; &#x627;&#x644;&#x645;&#x628;&#x627;&#x646;&#x64A;">Building Construction</a>
+                            <a href="../services/index.html" data-en="Renovation" data-ar="&#x627;&#x644;&#x62A;&#x62C;&#x62F;&#x64A;&#x62F;">Renovation</a>
+                            <a href="../services/index.html" data-en="Infrastructure" data-ar="&#x627;&#x644;&#x628;&#x646;&#x64A;&#x629; &#x627;&#x644;&#x62A;&#x62D;&#x62A;&#x64A;&#x629;">Infrastructure</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-en="Contact Info" data-ar="&#x645;&#x639;&#x644;&#x648;&#x645;&#x627;&#x62A; &#x627;&#x644;&#x62A;&#x648;&#x627;&#x635;&#x644;">Contact Info</h4>
+                        <div class="footer-contact-list">
+                            <div class="footer-contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-en="Riyadh, Saudi Arabia" data-ar="&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;&#x60C; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;">Riyadh, Saudi Arabia</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+966500000000">+966 50 000 0000</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@albathanksa.com">info@albathanksa.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p data-en="&copy; 2026 Al-Batahan Contracting. All Rights Reserved." data-ar="&copy; 2026 &#x645;&#x624;&#x633;&#x633;&#x629; &#x627;&#x644;&#x628;&#x637;&#x62D;&#x627;&#x646;. &#x62C;&#x645;&#x64A;&#x639; &#x627;&#x644;&#x62D;&#x642;&#x648;&#x642; &#x645;&#x62D;&#x641;&#x648;&#x638;&#x629;.">&copy; 2026 <span>Al-Batahan</span> Contracting. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+        <script src="../js/main.js"></script>
+        <script src="../js/switcher.js"></script>
+        <script src="../js/animations.js"></script>
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+            <button class="lb-btn" id="lbClose" aria-label="Close"><i class="fas fa-times"></i></button>
+            <button class="lb-btn" id="lbPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <button class="lb-btn" id="lbNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            <div class="lb-img-wrap">
+                <div class="lb-visual proj-bg-1" id="lbVisual"></div>
+                <div class="lb-title" id="lbTitle"></div>
+                <div class="lb-cat" id="lbCat"></div>
+                <div class="lb-counter" id="lbCounter"></div>
+            </div>
+        </div>
+        <!-- WHATSAPP FLOAT -->
+        <a href="https://wa.me/966500000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+</body>
+</html>
