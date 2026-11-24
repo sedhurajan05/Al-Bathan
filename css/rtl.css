@@ -1,0 +1,203 @@
+/* ==============================================
+   AL-BATAHAN — RTL / Arabic Layout Overrides
+   Applied when dir="rtl" is on <html>
+   ============================================== */
+
+[dir="rtl"] {
+    font-family: var(--font-ar);
+}
+
+/* ---- Navbar ---- */
+[dir="rtl"] .mobile-menu {
+    transform: translateX(-100%);
+}
+[dir="rtl"] .mobile-menu.open {
+    transform: translateX(0);
+}
+[dir="rtl"] .mobile-close {
+    right: auto;
+    left: 15px;
+}
+[dir="rtl"] .hamburger {
+    order: -1;
+}
+[dir="rtl"] .nav-logo {
+    flex-direction: row-reverse;
+}
+[dir="rtl"] .nav-links {
+    flex-direction: row-reverse;
+}
+[dir="rtl"] .footer-links a::before {
+    content: '‹';
+}
+[dir="rtl"] .footer-links a:hover {
+    padding-left: 0;
+    padding-right: 4px;
+}
+
+/* ---- Section titles ---- */
+[dir="rtl"] .section-title::after {
+    margin-right: auto;
+    margin-left: auto;
+}
+[dir="rtl"] .about-snapshot-text h2 {
+    text-align: right;
+}
+[dir="rtl"] .about-snapshot-text h2::after {
+    margin-left: 0;
+    margin-right: 0;
+}
+[dir="rtl"] .about-snapshot-text p {
+    text-align: right;
+}
+
+/* ---- Flip image order on tablet+ ---- */
+[dir="rtl"] .about-snapshot-visual {
+    order: 1;
+}
+
+/* ---- Service cards ---- */
+[dir="rtl"] .service-card::after {
+    transform-origin: right;
+}
+[dir="rtl"] .service-link i {
+    transform: scaleX(-1);
+}
+[dir="rtl"] .btn i.fa-arrow-right {
+    transform: scaleX(-1);
+}
+
+/* ---- Services detail cards ---- */
+[dir="rtl"] .service-detail-card {
+    border-left: none;
+    border-right: 5px solid var(--secondary);
+}
+[dir="rtl"] .service-detail-header {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+[dir="rtl"] .service-detail-title h3,
+[dir="rtl"] .service-detail-title .ar-title {
+    text-align: right;
+}
+[dir="rtl"] .service-bullets li {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/* ---- Why cards ---- */
+[dir="rtl"] .why-card {
+    flex-direction: row-reverse;
+}
+[dir="rtl"] .why-card:hover {
+    transform: translateX(-4px);
+}
+[dir="rtl"] .why-text h3,
+[dir="rtl"] .why-text p {
+    text-align: right;
+}
+
+/* ---- CEO section ---- */
+[dir="rtl"] .ceo-quote {
+    border-left: none;
+    border-right: 4px solid var(--secondary);
+    padding-left: 0;
+    padding-right: 18px;
+    text-align: right;
+}
+[dir="rtl"] .ceo-quote p {
+    text-align: right;
+}
+[dir="rtl"] .ceo-header {
+    flex-direction: column;
+}
+[dir="rtl"] .ceo-info h3,
+[dir="rtl"] .ceo-info .ceo-title {
+    text-align: center;
+}
+
+/* ---- Overview ---- */
+[dir="rtl"] .overview-section p {
+    text-align: right;
+    direction: rtl;
+}
+
+/* ---- Contact form ---- */
+[dir="rtl"] .form-group label {
+    text-align: right;
+    direction: rtl;
+}
+[dir="rtl"] .form-group input,
+[dir="rtl"] .form-group textarea,
+[dir="rtl"] .form-group select {
+    text-align: right;
+    direction: rtl;
+}
+[dir="rtl"] .contact-card-info h4,
+[dir="rtl"] .contact-card-info a,
+[dir="rtl"] .contact-card-info p {
+    text-align: right;
+}
+[dir="rtl"] .contact-info-card {
+    flex-direction: row-reverse;
+}
+
+/* ---- Page hero ---- */
+[dir="rtl"] .breadcrumb {
+    flex-direction: row-reverse;
+}
+
+/* ---- Slide content ---- */
+[dir="rtl"] .slide-content {
+    direction: rtl;
+}
+
+/* ---- Footer ---- */
+[dir="rtl"] .footer-col h4 {
+    text-align: right;
+}
+[dir="rtl"] .footer-tagline {
+    text-align: right;
+}
+[dir="rtl"] .footer-contact-item {
+    flex-direction: row-reverse;
+}
+[dir="rtl"] .footer-contact-item a,
+[dir="rtl"] .footer-contact-item span {
+    text-align: right;
+}
+[dir="rtl"] .footer-logo {
+    flex-direction: row-reverse;
+}
+[dir="rtl"] .footer-logo-text .en,
+[dir="rtl"] .footer-logo-text .ar {
+    text-align: right;
+}
+
+/* ---- Scroll to top flip ---- */
+[dir="rtl"] .scroll-top {
+    right: auto;
+    left: 20px;
+}
+
+/* ---- Project info ---- */
+[dir="rtl"] .project-info h3,
+[dir="rtl"] .project-desc,
+[dir="rtl"] .project-card-full .project-info h3 {
+    text-align: right;
+}
+[dir="rtl"] .project-meta {
+    flex-direction: row-reverse;
+}
+
+/* ---- CTA section ---- */
+[dir="rtl"] .cta-section h2,
+[dir="rtl"] .cta-section p {
+    direction: rtl;
+}
+
+/* ---- Services intro ---- */
+[dir="rtl"] .services-intro p {
+    direction: rtl;
+    text-align: center;
+}
